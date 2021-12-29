@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Font Awsome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- calendar -->
+    <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="../dist/theme.css">
+
+    <!-- Sweet Alert 2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.css">
+    <title>UNIVERSITAS ISLAM KALIMANTAN</title>
+  </head>
+  <body style="background-color: lightskyblue;">
+    
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card shadow border border-secondary border-2">
+            <div class="card-body">
+              <img src="../img/header-uniska.png" class="img-fluid">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-user-circle"></i> Akun
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-user-edit"></i> Edit Profile</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-key"></i> Edit Password</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-school"></i> Akademika
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-eye"></i> Lihat Presensi</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-calendar-alt"></i> Jadwal Kuliah</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="far fa-file-alt"></i> Transkrip Nilai</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-graduation-cap"></i> Prestasi Individu</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-id-card"></i> Kartu Rencana Studi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-plus"></i> Ambil KRS</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-list"></i> KRS Semester</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Hapus KRS</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-chalkboard-teacher"></i> Bimbingan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-video"></i> Rekam Bimbingan PKL</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-video"></i> Rekam Bimbingan Skripsi</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="far fa-id-card"></i> Kartu Hasil Studi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-list-alt"></i> KHS Persemester</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="far fa-list-alt"></i> KHS Gabungan</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-file-alt"></i> Pendaftaran Yudisium
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-scroll"></i> Persyaratan Yudisium</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-file-upload"></i> Upload Berkas Yudisium</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <div class="container mt-3">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="text-start border-bottom border-2 fw-bold mb-2">
+                          <small>MUHAMMAD ROBBIANOOR ILHAMNI</small>
+                        </div>
+                        <img src="../img/robbianoor.jpg" class="img-fluid img-thumbnail rounded">
+                        <table>
+                          <tr>
+                            <td><small>NIM</small></td>
+                            <td>:</td>
+                            <td style="font-size: 12px; font-weight: bold;">2010010441</td>
+                          </tr>
+                          <tr>
+                            <td><small>Prodi</small></td>
+                            <td>:</td>
+                            <td style="font-size: 12px; font-weight: bold;">S1 TEKNIK INFORMATIKA</td>
+                          </tr>
+                          <tr>
+                            <td><small>Status</small></td>
+                            <td>:</td>
+                            <td style="font-size: 12px; font-weight: bold;">Aktif</td>
+                          </tr>
+                          <tr>
+                            <td><small>Batas</small></td>
+                            <td>:</td>
+                            <td style="font-size: 12px; font-weight: bold;">20262</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="list-group mb-2">
+                      <a href="home.html" class="list-group-item list-group-item-action active" aria-current="true">
+                        <i class="fas fa-home"></i> Home
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-edit"></i> Kuisioner Online <span class="badge bg-danger rounded-pill">99+</span></a>
+                      <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-money-check-alt"></i> Status Pembayaran </a>
+                      <a href="../index.html" class="list-group-item list-group-item-action"><i class="fas fa-sign-out-alt"></i> Logout </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="text-start">
+                          <small style="font-weight: bold; font-size: 12px;">Semester Ganjil 2021/2022 | Program Studi (S1) Teknik Informatika - 55201</small>
+                        </div>
+                        <div class="alert alert-danger my-3 p-1" role="alert">
+                          ANDA BELUM SELESAI MENGISI KUISIONER, SILAKAN ISI DI <a href="#" class="fw-bold text-decoration-none">SINI</a>
+                        </div>
+                        <div class="text-center">
+                          <h6>.: Selamat Datang MUHAMMAD ROBBIANOOR ILHAMNI :.</h6>
+                          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                            <ol class="breadcrumb float-end">
+                              <li class="breadcrumb-item"><a href="#" class="text-decoration-none" style="color: lightslategray; font-size: 12px;">Home</a></li>
+                            </ol>
+                          </nav>
+                        </div>
+                        <div class="text-start mt-5 border-top border-bottom border-2">
+                          <h4 class="text-success text-decoration-underline fw-bold fs-5"><i class="fas fa-graduation-cap"></i> Prestasi Mahasiswa</h4>
+                          <p class="font-monospace fw-bold" style="text-align: justify;">
+                            Bagi mahasiswa yang memiliki prestasi baik dibidang akademik maupun nonakademik dapat menginputkan datanya ke sistem yang nantinya akan digunakan sebagai dasar pembuatan Surat Keterangan Pendamping Ijasah (SKPI).
+                            Untuk mengupload silakan, <br> KLIK -> <a href="#" class="fw-bold text-decoration-none">Upload Berkas</a>
+                          </p>
+                        </div>
+                        <div class="text-start">
+                          <h4 class="text-danger text-decoration-underline fw-bold fs-5"><i class="fas fa-bullhorn"></i> Pengumuman penting</h4>
+                          <p class="font-monospace fw-bold" style="text-align: justify;">
+                            Kepada semua Mahasiswa <span class="text-danger">SELURUH ANGKATAN</span> dihimbau untuk mengecek data diri pada Menu <a href="" class="text-decoration-none">PROFILE</a> <br> <br>
+                            Data wajib diisi dengan data yang sebenar-benarnya agar lebih mempermudah seluruh proses akademik mulai hari pertama kuliah hingga kelulusan nanti.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="calendar-container"></div>
+                      </div>
+                    </div>
+                    <div class="text-start mt-3">
+                      <h4 class="text-dark"><i class="fas fa-users"></i> Pengguna online</h4>
+                      <table class="table table-sm">
+                        <thead>
+                          <tr>
+                            <th>No. </th>
+                            <th>Nama</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><small>1</small></td>
+                            <td><small>Muhammad Robbianoor Ilhamni</small></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <nav aria-label="...">
+                        <ul class="pagination pagination-sm justify-content-center">
+                          <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Sweet Alert 2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+    <!-- calendar -->
+    <script src="../dist/calendar.min.js"></script>
+    <script src="../dist/calendar.js"></script>
+    <script>
+      function selectDate(date) {
+        $('.calendar-container').updateCalendarOptions({
+          date: date
+        });
+        console.log(calendar.getSelectedDate());
+      }
+
+      var defaultConfig = {
+        weekDayLength: 1,
+        date: new Date(),
+        onClickDate: selectDate,
+        showYearDropdown: true,
+        startOnMonday: true,
+      };
+
+      var calendar = $('.calendar-container').calendar(defaultConfig);
+      console.log(calendar.getSelectedDate());
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
